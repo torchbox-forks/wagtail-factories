@@ -22,6 +22,7 @@ tests_require = [
     "flake8==4.0.0",
     "flake8-blind-except==0.1.1",
     "flake8-debugger==4.1.2",
+    "wagtail_modeladmin>=2.0",
 ]
 
 with open("README.rst") as fh:
