@@ -5,6 +5,7 @@ Unreleased
 - Add support for Django 4.2+
 - Add support for Python 3.12
 - Add wagtail-modeldmin as part of testing dependencies
+- Add support for factory-boy 3.3
 
 4.1.0
 =====
