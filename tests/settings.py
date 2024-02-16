@@ -1,3 +1,5 @@
+from wagtail import VERSION as WAGTAIL_VERSION
+
 CACHES = {
     "default": {
         "BACKEND": "django.core.cache.backends.locmem.LocMemCache",
@@ -19,7 +21,9 @@ INSTALLED_APPS = [
     "wagtail.contrib.frontend_cache",
     "wagtail.contrib.search_promotions",
     "wagtail.contrib.settings",
-    "wagtail.contrib.modeladmin",
+    # Wagtail 5.1 upgrade consideration
+    # wagtail.contrib.modeladmin is deprecated
+    "wagtail_modeladmin" if WAGTAIL_VERSION >= (5, 1) else "wagtail.contrib.modeladmin",
     "wagtail.contrib.table_block",
     "wagtail.contrib.forms",
     "wagtail.search",

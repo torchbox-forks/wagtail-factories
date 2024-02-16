@@ -22,6 +22,7 @@ tests_require = [
     "flake8==4.0.0",
     "flake8-blind-except==0.1.1",
     "flake8-debugger==4.1.2",
+    "wagtail_modeladmin>=2.0",
 ]
 
 with open("README.rst") as fh:
@@ -59,15 +60,17 @@ setup(
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
         "Programming Language :: Python :: Implementation :: CPython",
         "Programming Language :: Python :: Implementation :: PyPy",
         "Framework :: Django",
         "Framework :: Django :: 3.2",
-        "Framework :: Django :: 4.0",
-        "Framework :: Django :: 4.1",
+        "Framework :: Django :: 4.2",
+        "Framework :: Django :: 5.0",
         "Framework :: Wagtail",
         "Framework :: Wagtail :: 4",
         "Framework :: Wagtail :: 5",
+        "Framework :: Wagtail :: 6",
     ],
     zip_safe=False,
 )
