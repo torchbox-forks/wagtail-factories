@@ -1,7 +1,7 @@
 from wagtail import blocks
 from wagtail.documents.blocks import DocumentChooserBlock
 from wagtail.fields import StreamField
-from wagtail.images.blocks import ImageChooserBlock
+from wagtail.images.blocks import ImageBlock, ImageChooserBlock
 from wagtail.models import Page
 
 
@@ -49,6 +49,8 @@ class MyTestPage(Page):
 class MyStreamBlock(blocks.StreamBlock):
     struct_block = MyBlock()
     char_block = blocks.CharBlock()
+    image_chooser_block = ImageChooserBlock()
+    image_block = ImageBlock()
 
 
 class NestedStreamBlock(blocks.StreamBlock):
