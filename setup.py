@@ -12,12 +12,12 @@ docs_require = [
 ]
 
 tests_require = [
-    "pytest==9.0.0",
-    "pytest-django==4.11.1",
+    "pytest==9.0.2",
+    "pytest-django==4.12.0",
     "pytest-cov==7.0.0",
-    "coverage==7.11.3",
-    "ruff==0.14.4",
-    "tox==4.32.0",
+    "coverage==7.13.4",
+    "ruff==0.15.1",
+    "tox==4.36.0",
 ]
 
 with open("README.md") as fh:
@@ -60,8 +60,8 @@ setup(
         "Programming Language :: Python :: Implementation :: PyPy",
         "Framework :: Django",
         "Framework :: Django :: 4.2",
-        "Framework :: Django :: 5.1",
         "Framework :: Django :: 5.2",
+        "Framework :: Django :: 6.0",
         "Framework :: Wagtail",
         "Framework :: Wagtail :: 6",
         "Framework :: Wagtail :: 7",
